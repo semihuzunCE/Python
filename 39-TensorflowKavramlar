@@ -1,0 +1,15 @@
+ANN:artificial neural network: yapay sinir ağı
+Perceptron: yapay  nöronu temsil eder. bu nöronlar girdiler ve bias değeri alırık bir çıktı verir
+Activation Fucntions: aktivasyon fonksiyonları veri setlerimii eğitirken kullanacagımız matematiksel fonksiyonlardır yapıcağımız sınıflandımaya göre uygun fonksiyon seçmeliyiz
+Problem Tipleri:
+Regresyon: veri setimizdeki veriler ortalamaya yakın olma egilimi gösterebilir. Veri setindeki ortalamayı göz önüne alarak program bir tahmin yapmaya çalışır. Numerik tahminlerde bulunmamızı saglar
+Classification(sınıflandırma):aynı tür verileri gruplama işlemidir.
+
+Maliyet fonksiyonu: tahminlerin gerçek veriden ne kadar uzak oldugunu verir. Ne kadar düşükse o kadar iyi.
+Gradient Descent: maliyet fonksiyonunun grafiğini düşünelim. Bu maliyetin en düşük oldugu yeri bulmak için gradiant optimizasyon yöntemleri kullanılır.
+ learning rate ile de alakalıdır en dibe gitmek için ne kadar büyük adım atarsak o noktayı atlama ihtimalimiz yüksektir. Ne kadar küçük adım atarsakta işlem süresi uzar.
+ Bunun için en iyi optimizasyon seçeneğini veri setimize göre seçmeliyiz.(en ünlüleri="rmsprop", "adam")
+
+
+batch: programa verceğimiz veri miktarını belirtir. örneğin elimizde 100 bin veri varsa bunları programa 100 er 100 er vermek mantıklı olabilir. Verimizin büyüklüğüne göre secmeliyiz
+epoch: veri setinin üstünden kaç kere geçildiğini belirtir.
