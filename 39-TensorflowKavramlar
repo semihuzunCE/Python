@@ -11,5 +11,5 @@ Gradient Descent: maliyet fonksiyonunun grafiğini düşünelim. Bu maliyetin en
  Bunun için en iyi optimizasyon seçeneğini veri setimize göre seçmeliyiz.(en ünlüleri="rmsprop", "adam")
 
 
-batch: programa verceğimiz veri miktarını belirtir. örneğin elimizde 100 bin veri varsa bunları programa 100 er 100 er vermek mantıklı olabilir. Verimizin büyüklüğüne göre secmeliyiz
+batch: programa verceğimiz veri miktarını belirtir. örneğin elimizde 100 bin veri varsa bunları programa 100 er 100 er vermek mantıklı olabilir. Verimizin büyüklüğüne göre secmeliyiz. geri yayılım batch size'a göre yapılır 100 ise her 100 veride bir geri yayılım yapar. batch sizeımız veri miktarımız kadar ise her epoch bittiginde geri yayılım olur.
 epoch: veri setinin üstünden kaç kere geçildiğini belirtir.
